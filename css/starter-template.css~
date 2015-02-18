@@ -1,0 +1,32 @@
+body {
+  padding-top: 50px;
+  background-color: #dbdbdb;
+}
+
+.navbar-fixed-top{
+    height:100px;
+}
+
+#logoURJC{
+    height: 70px;
+    width: 160px;
+}
+
+.enlace{
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+#cabeceraURJC{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.foto{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.img-circle{
+    position: center; 
+}

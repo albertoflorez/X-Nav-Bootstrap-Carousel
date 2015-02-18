@@ -1,30 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rediseño de la web de la ETSIT con Bootstrap</title>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic Bootstrap Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link href="css/starter-template.css" rel="stylesheet"> 
+        <link href="css/index2.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="http://urjc.es"><img id='logoURJC' src="images/logoURJC.jpg" ></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- Carousel extra styles -->
-    <link rel="stylesheet" href="css/carousel.css">
-  </head>
-  <body>
-    <h1>Esto es un ejercicio para hacer una página para la ETSIT URJC con componentes de Boostrap.</h1>
+                    <a href="http://www.etsit.urjc.es/">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class="glyphicon glyphicon-home"></span>
+            		            <p>Home</p>
+                            </button>
+                        </div>
+                    </a>
 
-    <p>La página web ha de usar al menos:</p>
-    <ul>
-      <li>Un <i>carousel</i> (con su barra de navegación)</li>
-      <li>Al menos dos componentes más de Boostrap (a elección del alumno)</<li>
-      <li>Al menos un componente de <a href="http://www.bootsnipp.com">Bootsnipp</a></li>
-    </ul>
+                    <a href="http://www.urjc.es/informacion/cata/index.html">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class="glyphicon glyphicon-earphone"></span>
+            		            <p>Contact</p>
+                            </button>
+                        </div>
+                    </a>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
-  </body>
+                    <a href="http://www.etsit.urjc.es/informacion_general/index.html">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+            		            <p>About</p>
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="https://sada.urjc.es/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=wa%3Dwsignin1.0%26rpsnv%3D4%26ct%3D1424215817%26rver%3D6.6.6556.0%26wp%3DMBI_SSL%26wreply%3Dhttps:%252F%252Foutlook.office365.com%252Fowa%252F%253Frealm%253Durjc.es%2526vd%253Dwebmail%26id%3D260563%26whr%3Durjc.es%26CBCXT%3Dout">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class="glyphicon glyphicon-envelope"></span>
+            		            <p>Webmail</p>
+                            </button>
+                        </div>
+                    </a>
+
+    
+                    <a href="https://gente.urjc.es/">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class="glyphicon glyphicon-user"></span>
+            		            <p>Directorio</p>
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="http://www.urjc.es/biblioteca/fuenlabrada/">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class="glyphicon glyphicon-book"></span>
+            		            <p>Biblioteca</p>
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="https://sso.urjc.es/sso/pages/loginurjc.jsp">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class="glyphicon glyphicon-folder-open"></span>
+            		            <p>Portal Servicios</p>
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="https://www.campusvirtual.urjc.es/moodle/login/index.php">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class="glyphicon glyphicon-blackboard"></span>
+            		            <p>Campus Virtual</p>
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="http://www.urjc.es/informacion/video_institucional/index.html">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class=" glyphicon glyphicon-facetime-video"></span>
+            		            <p>Video Institucional</p>
+                            </button>
+                        </div>
+                    </a>
+
+                    <a href="http://www.urjc.es/alumnos/matriculacion/archivos/calendario%20academico_2014-2015.pdf">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-nav navbar-btn">
+                                <span class="glyphicon glyphicon-calendar"></span>
+            		            <p>Calendar</p>
+                            </button>
+                        </div>
+                    </a>
+                    
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <img id='cabeceraURJC' src="images/imagenCabecera.jpg" >
+
+            
+            <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+        <li class="active" data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item">
+          <img src="images/aularioII-edificio.JPG" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Aulario II</h1>
+                <p>El Campus de Fuenlabrada de la Universidad Rey Juan Carlos, donde se ubican la Facultad de Ciencias de la Comunicación, la Escuela Técnica Superior de Ingeniería de Telecomunicación, la Facultad de Ciencias del Turismo y el Instituto Superior de Danza Alicia Alonso, ocupa una parcela de 50 hectáreas completamente urbanizada. Hay construidos 13 edificios y las instalaciones deportivas de la Universidad Rey Juan Carlos que incluye un estadio para fútbol y atletismo con una grada cubierta.</p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.fuenlabrada.urjc.es/informacion_general/estructura/index.html" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item active">
+          <img src="images/deparIII-edificio3.JPG" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Departamental III aulario III</h1>
+                <p>DEPARTAMENTAL II: Tiene una superficie de 3.239,05 metros cuadrados y en él se ubican 48 despachos, 16 en cada una de sus tres plantas,  con una capacidad total de 144 puestos de trabajo para uso docente. </p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.fuenlabrada.urjc.es/informacion_general/estructura/index.html" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/labosII-edificio.JPG" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Laboratorios II</h1>
+                <p>Con 7.372 metros cuadrados de superficie y unidos por un sótano, estos edificios de dos plantas cuentan con quince aulas de capacidad entre 102 y 135 alumnos, dos aulas de 48 alumnos, doce laboratorios donde atender las necesidades de la enseñanza práctica de la Ingeniería Superior de Telecomunicación</p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.fuenlabrada.urjc.es/informacion_general/estructura/index.html" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/deporte-estadio.JPG" alt="Fourth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Instalaciones Deportivas</h1>
+                <p>Las instalaciones deportivas que la Universidad tiene en su Campus de Fuenlabrada </p>
+              <p><a class="btn btn-lg btn-primary" href="http://www.fuenlabrada.urjc.es/informacion_general/estructura/index.html" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+  
+
+    <div class="jumbotron">
+         <div class="row">
+                <div class=" col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <h2>Teoría de la Señal y Comunicaciones</h2>
+                <p>Departamento especializado en Tería de la Señal y Comunicaciones</p>
+                <p><a class="btn btn-primary btn-lg" href="http://www.etsit.urjc.es/departamentos_etsit/index.html"  role="button">Go</a></p>
+             </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <h2>Sistemas Telemáticos y Computación</h2>
+                <p>Departamento especializado en Sistemas Telemáticos y Computación</p>
+                <p><a class="btn btn-primary btn-lg" href="http://www.etsit.urjc.es/departamentos_etsit/index.html"  role="button">Go</a></p>
+             </div>
+            <div class=" col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <h2>Moodle</h2>
+                <p>Acceso al portal de docencia</p>
+                <p><a class="btn btn-primary btn-lg" href="http://docencia.etsit.urjc.es/moodle/course/view.php?id=109"  role="button">Go</a></p>
+             </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <h2>Alumnos</h2>
+                <p>Enlace a todo lo referente con los alumnos</p>
+                <p><a class="btn btn-primary btn-lg" href="http://www.etsit.urjc.es/alumnos/index.html"  role="button">Go</a></p>
+             </div>
+            
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="container-fluid foto">
+
+
+            <div class="ha-bg-parallax text-center block-marginb-none" data-type="background" data-speed="20">
+
+        <div class="ha-parallax-body">
+
+            <div class="ha-content ha-content-whitecolor">
+
+                "Non nova, sed nove"
+
+            </div>
+
+            <div class="ha-parallax-divider-wrapper">
+
+                <span class="ha-diamond-divider-md img-responsive"></span>
+
+            </div>
+
+            <div class="ha-heading-parallax">URJC</div>
+
+        </div>
+
+    </div>
+</div>
+    
+    
+    <div class="container-fluid">
+    
+<div class="row">
+    
+    <div class="col-md-4">
+      <div class="alert alert-info" align=center>Gsyc</div>
+        <a href="http://gsyc.es/">
+      <img class="img-responsive img-circle" src="images/code.jpg">
+        </a>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info" align=center>Moodle</div>
+        <a href="http://docencia.etsit.urjc.es/moodle/course/view.php?id=109">
+      <img class="img-responsive img-circle" src="images/moodle.gif">
+        </a>
+    </div>
+    <div class="col-md-4">
+      <div class="alert alert-info" align=center>Seminarios y Actividades para alumnos de la ETSIT</div>
+        <a href="http://docencia.etsit.urjc.es/moodle/course/view.php?id=224">
+            <img  class="img-responsive img-circle" src="images/activiades.jpeg" >
+        </a>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-md-6">
+      <div class="alert alert-info" align=center>4x4 Wireless</div>
+        <a href="http://www.sermadridsur.com/noticias/los-jovenes-y-las-tecnologias-de-la-comunicacion-que-nos-cambiaran-la-vida_41520/">
+      <img class="img-responsive img-circle" src="images/4x4.jpg">
+        </a>
+    </div>
+
+    <div class="col-md-6">
+      <div class="alert alert-info" align=center>Unidad de Cultura Científica de la Innovación</div>
+        <a href="http://www.ucci.urjc.es/">
+      <img class="img-responsive img-circle" src="images/dron.jpg">
+        </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+&copy; 2015 por Alberto Flórez Pagés
+        
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index2.js"></script>
+    </body>
 </html>
